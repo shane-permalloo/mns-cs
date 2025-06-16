@@ -1,0 +1,241 @@
+<!-- Bootstrap-Select CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+
+<div class="container">
+  <div class="header flex mb-4">
+    <h3 class="title">CHANGE IN USER FORM</h3>
+    <span class="text-gray-600 small">Ref: USR/SYSAD-01</span>
+  </div>
+
+  <form id="userForm">
+    <!-- System Section -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">SYSTEM</h2>
+      <div class="form-group">
+        <select required class="form-control selectpicker" id="systemSelect" data-live-search="true" title="Please select from the list">
+          <option value="CNP">Contribution Network Project - CNP</option>
+          <option value="CBRIS">Companies and Businesses Registration Integrated System - CBRIS</option>
+          <option value="EAR">Extra Attendance - EAR</option>
+          <option value="PDMS">Public Debt Monitoring System - PDMS</option>
+          <option value="TN Phase III-FM">TradeNet – Phase III – Freight Station and Freeport - TN Phase III-FS</option>
+          <option value="TN Phase III-FS">TradeNet Single Window – Phase III – Declaration - TN Phase III-FM</option>
+          <option value="TN Phase VI">TN Phase VI - Certificate of Origin</option>
+          <option value="TRADELINK">TradeLink Single Window - TRADELINK</option>
+          <option value="FOTS">Freeport Online Tracking System - FOTS</option>
+          <option value="TEPS">Tradenet Electronic Payment System - TEPS</option>
+          <option value="MCCI">MCCI - Certificate of Origin</option>
+          <option value="WEBBOE">Web Bill of Entry - WEBBOE</option>
+          <option value="WMS">Warehouse Management System - WMS</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Company Details -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">COMPANY DETAILS</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Account ID /Customer Code <span class="text-danger">*</span> </label>
+            <input type="text" required class="form-control bg-light" id="accountId" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Account Name /Company Name <span class="text-danger">*</span> </label>
+            <input type="text" required class="form-control bg-light" id="accountName" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Telephone <span class="text-danger">*</span> </label>
+            <input type="tel" required class="form-control bg-light telephone" id="accountTelephone" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Email <span class="text-danger">*</span> </label>
+            <input type="email" required class="form-control bg-light email" id="accountEmail" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Administrator Details -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">USER'S DETAILS</h2>
+      <p class="small text-muted">Please update the User Name as below, with immediate effect</p>
+
+      <div class="form-group">
+        <label> User ID <span class="text-danger">*</span> </label>
+        <input type="text" required class="form-control bg-light" id="userId" />
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Previous Name <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="userPrevName" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Previous Job Title <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="userPrevJob" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>New Name <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="userNewName" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>New Job Title <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="userNewJob" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Telephone</label>
+            <input type="tel" class="form-control bg-light telephone" id="userNewTelephone" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Mobile Phone <span class="text-danger">*</span> </label>
+            <input type="tel" required class="form-control bg-light telephone" id="userNewMobile" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label> New User Email <span class="text-danger">*</span> </label>
+        <p class="small text-muted lh-base">
+          Please provide ONLY email address created for you by your employer. We strongly recommend that you do NOT provide email
+          addresses used by a group, or created by yourself for your personal use, such as under Gmail, Yahoo, Hotmail, etc. Using your
+          personal email presents security risks to the company/business information, and personal email accounts may not be covered by
+          your company’s security policies</p>
+        <input type="email" required class="form-control bg-light email" id="userNewEmail" />
+        
+      </div>
+
+      <div class="form-group">
+        <label> New User Signature <span class="text-danger">*</span> </label>
+        <p class="small text-muted lh-base">To be filled by the authorised signatories as per Subscriber Account Registration Form.</p>
+
+        <div class="file-upload">
+          <input type="file" id="signature" required class="d-none" />
+          <label for="signature"> Drop and drop user signature here or click to select the file </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Declarant Details -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">DECLARANT DETAILS</h2>
+      <p class="small text-muted lh-base">I certify that all the above information given are correct and true.</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>First Name <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="firstName" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Last Name <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="lastName" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Job Title <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="jobTitle" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Date <span class="text-danger">*</span></label>
+            <input type="datetime-local" readonly required class="form-control bg-light" id="date" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Signature <span class="text-danger">*</span></label>
+            <div class="file-upload">
+              <input type="file" id="declarantSignature" required class="d-none" />
+              <label for="declarantSignature"> Drop and drop user signature here or click to select the file </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Official Seal</label>
+            <div class="file-upload">
+              <input type="file" id="officialSeal" class="d-none" />
+              <label for="officialSeal"> Drop and drop official seal here or click to select the file </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" required class="custom-control-input" id="ack" />
+          <label class="custom-control-label" for="ack">
+            I have read and acknowledge the <a href="https://mns.mu/wp-content/uploads/2023/09/DC0-MNS_Privacy-Notice-202209.pdf" target="_blank">Privacy Notice</a> and I understand that all personal data shall be collected and processed in accordance with the Data Protection Act 2017.</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mb-4">
+      <button id="clearBtn" type="button" class="btn clear-btn px-4">Clear</button>
+      <button type="submit" id="submitBtn" class="btn submit-btn px-4">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="afc-modal">
+  <div class="afc-modal-dialog">
+      <div class="afc-modal-header">
+          <h5 class="afc-modal-title">Form submitted successfully</h5>
+          <button type="button" class="afc-modal-close" onclick="closeModal(this)">&times;</button>
+      </div>
+      <div class="afc-modal-body">
+        <p class="lh-base">
+          Thank you for your request! Your request will soon be handled by our dedicated Customer Service Team. You may also reach out to us for any related matter on
+          <a href="mailto:customer.service@mnsmu">customer.service@mns.mu</a> and <a href="tel:4016800">4016800</a>.
+        </p>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap-select JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    // Initialize Bootstrap Select
+    jQuery(".selectpicker").selectpicker({
+      liveSearch: true,
+      liveSearchPlaceholder: "Select from the list...",
+      size: 10,
+    });
+
+  });
+</script>

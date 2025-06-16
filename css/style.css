@@ -1,0 +1,324 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+.text-green-500 {
+  color: #10b981;
+}
+.text-blue-500 {
+  color: #3b82f6;
+}
+.text-red-500 {
+  color: #ef4444;
+}
+.text-gray-600 {
+  color: #6b7280;
+}
+.text-gray-700 {
+  color: #4b5563;
+}
+.text-gray-800 {
+  color: #374151;
+}
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.file-upload {
+  border: 2px dashed #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  color: #6c757d;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.notes-section {
+  border: 2px solid #dee2e6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.clear-btn {
+  background-color: #eee !important;
+  color: #6c757d !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.clear-btn:hover {
+  background-color: #ddd !important;
+  color: #6c757c !important;
+}
+
+.submit-btn {
+  background-color: #28a745 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-right: 0;
+}
+
+.submit-btn:hover {
+  background-color: #218838 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Bootstrap-select customization */
+#userForm .card {
+  z-index: auto;
+}
+.bootstrap-select .bs-searchbox .form-control {
+  width: calc(100% - 20px);
+  padding: 0 10px;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder {
+  border-radius: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.bootstrap-select .dropdown-menu {
+  max-height: 300px !important;
+}
+
+.bootstrap-select .bs-searchbox .form-control {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.bootstrap-select .dropdown-item.active,
+.bootstrap-select .dropdown-item:active {
+  background-color: #28a745;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option,
+.bootstrap-select .dropdown-toggle .filter-option:hover, .bootstrap-select .dropdown-toggle .filter-option:active,
+.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item.selected {
+	color: #495057 !important;
+}
+
+.bootstrap-select .btn.dropdown-toggle.btn-light {
+	border-radius: 0 !important;
+}
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.custom-control-label,
+.card ul li {
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.input-error,
+.file-upload:has(.input-error),
+.custom-control-label:has(.input-error)::before {
+  border: 1px solid #ef4444; /* Red-500 border */
+}
+.input-error:hover,
+.file-upload:has(.input-error):hover {
+  border-color: #ef4444; /* Red border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5); /* Red ring effect */
+}
+
+.file-upload {
+  border-style: dashed !important;
+  border-width: 2px !important;
+}
+
+.form-control {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.required-field::after {
+  content: "*";
+  color: #dc2626;
+}
+.required-field::after {
+  content: "";
+}
+
+/* Feedback form */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  cursor: pointer;
+  padding: 0 0.1rem;
+  color: #ddd;
+}
+.rating svg {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+.rating .star-outline {
+  fill: #f8f9fa;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.rating .star-filled {
+  fill: #ffc107;
+  display: none;
+}
+.rating input:checked ~ label .star-outline {
+  display: none;
+}
+.rating input:checked ~ label .star-filled {
+  display: inline;
+}
+.rating label:hover .star-outline,
+.rating label:hover ~ label .star-outline {
+  display: none;
+}
+.rating label:hover .star-filled,
+.rating label:hover ~ label .star-filled {
+  display: inline;
+}
+
+/* Custom Modal */
+.afc-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.afc-modal.is-visible {
+  display: block;
+  opacity: 1;
+}
+
+.afc-modal-dialog {
+  background-color: white;
+  margin: 15% auto;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.afc-modal.is-visible .afc-modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.afc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.afc-modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.afc-modal-close {
+  border: none !important;
+  color: #6c757d !important;
+  font-size: 24px !important;
+  font-weight: normal !important;
+  background: none !important;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.afc-modal-close:hover {
+  color: #333 !important;
+  font-size: 24px !important;
+  font-weight: normal !important;
+  background-color: none !important;
+}
+
+.afc-modal-body {
+  padding: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.afc-modal-body a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.afc-modal-body a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+table.table-sm.border-none td {
+	border: none !important;
+}
+
+.lh-base {
+	line-height: 1.4;
+	display: block;
+}
+
+.file-upload label {
+  margin-bottom: 0 ;
+}

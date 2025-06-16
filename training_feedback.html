@@ -1,0 +1,423 @@
+<!-- Bootstrap-Select CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+
+<div class="container">
+  <div class="header flex mb-4">
+    <h3 class="title">TRAINING FEEDBACK FORM</h3>
+    <span class="text-gray-600 small">Ref: TC/SYSFD-01</span>
+  </div>
+
+  <form id="userForm">
+    <!-- System Section -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">TRAINING DETAILS</h2>
+      <p class="lh-base text-muted">
+        Dear Participant,<br />Thank you for attending our recent training session. Your feedback is valuable to us as we strive to improve our training programs. <br />Please take a few minutes to
+        fill out this feedback form.
+      </p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label> Please choose the course from the list <span class="text-danger">*</span> </label>
+            <select required class="form-control selectpicker" id="trainingTitleSelect" data-live-search="true" title="Please select from the list">
+              <option value="CNP">Contribution Network Project - CNP</option>
+              <option value="CBRIS">Companies and Businesses Registration Integrated System - CBRIS</option>
+              <option value="EAR">Extra Attendance - EAR</option>
+              <option value="PDMS">Public Debt Monitoring System - PDMS</option>
+              <option value="TN Phase III-FM">TradeNet – Phase III – Freight Station and Freeport - TN Phase III-FS</option>
+              <option value="TN Phase III-FS">TradeNet Single Window – Phase III – Declaration - TN Phase III-FM</option>
+              <option value="TN Phase VI">TN Phase VI - Certificate of Origin</option>
+              <option value="TRADELINK">TradeLink Single Window - TRADELINK</option>
+              <option value="FOTS">Freeport Online Tracking System - FOTS</option>
+              <option value="TEPS">Tradenet Electronic Payment System - TEPS</option>
+              <option value="MCCI">MCCI - Certificate of Origin</option>
+              <option value="WEBBOE">Web Bill of Entry - WEBBOE</option>
+              <option value="WMS">Warehouse Management System - WMS</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Training date <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light date" id="trainingDate" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Trainer Name <span class="text-danger">*</span></label>
+            <input type="text" required class="form-control bg-light" id="trainerName" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company Details -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">TRAINEE DETAILS</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label> Trainee Name </label>
+            <input type="text" class="form-control bg-light" id="traineeName" />
+          </div>
+          <div class="form-group">
+            <label> Company Name <span class="text-danger">*</span> </label>
+            <input type="text" required class="form-control bg-light" id="companyName" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Declarant Details -->
+    <div class="form-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <h2 class="section-title">TRAINING FEEDBACK DETAILS</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Star Rating -->
+          <div class="form-group">
+            <label for="rating" class="required-field">Overall, how would you rate the training session? <span class="text-danger">*</span></label>
+            <div class="rating">
+              <input type="radio" id="star10" required name="rating" value="10" />
+              <label for="star10" title="10">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star9" name="rating" value="9" />
+              <label for="star9" title="9">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star8" name="rating" value="8" />
+              <label for="star8" title="8">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star7" name="rating" value="7" />
+              <label for="star7" title="7">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star6" name="rating" value="6" />
+              <label for="star6" title="6">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1">
+                <svg viewBox="0 0 51 48">
+                  <path class="star-outline" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" stroke="#ddd" stroke-width="1" fill="none" />
+                  <path class="star-filled" d="M25.5 1l6.6 15.2 16.9 1.6-12.7 12 3.5 16.2-15.3-9-15.3 9 3.5-16.2L0 17.8l16.9-1.6L25.5 1z" />
+                </svg>
+              </label>
+            </div>
+          </div>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" width="50%">Question</th>
+                <th scope="col" class="text-center">Strongly Agree</th>
+                <th scope="col" class="text-center">Agree</th>
+                <th scope="col" class="text-center">Neutral</th>
+                <th scope="col" class="text-center">Disagree</th>
+                <th scope="col" class="text-center">Strongly Disagree</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="form-group">
+                <td class="form-label">How clear were the objectives of the training? <span class="text-danger">*</span></td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" required type="radio" name="training_objective" value="5" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="training_objective" value="4" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="training_objective" value="3" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="training_objective" value="2" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="training_objective" value="1" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">How would you rate the trainer's knowledge of the subject? <span class="text-danger">*</span></td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" required type="radio" name="trainer_knowledge" value="5" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="trainer_knowledge" value="4" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="trainer_knowledge" value="3" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="trainer_knowledge" value="2" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="trainer_knowledge" value="1" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">How effective was the trainer in the delivering the content? <span class="text-danger">*</span></td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" required type="radio" name="effectiveness" value="5" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="effectiveness" value="4" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="effectiveness" value="3" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="effectiveness" value="2" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="effectiveness" value="1" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">How relevant was the training content to you job? <span class="text-danger">*</span></td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" required type="radio" name="relevance" value="5" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="relevance" value="4" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="relevance" value="3" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="relevance" value="2" />
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input position-static" type="radio" name="relevance" value="1" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" width="50%">Question</th>
+                <th scope="col" class="text-center">Yes</th>
+                <th scope="col" class="text-center">No</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="form-group">
+                <td class="form-label">Was the duration of the training session appropriate? <span class="text-danger">*</span></td>
+                <td>
+                  <div class="form-check d-flex justify-content-center">
+                    <input type="radio" id="duration-yes" required name="duration" class="form-check-input position-static" />
+                  </div>
+                </td>
+
+                <td>
+                  <div class="form-check d-flex justify-content-center">
+                    <input type="radio" id="duration-no" name="duration" class="form-check-input position-static" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="form-group">
+                <td class="form-label">Would you recommend this training session to others? <span class="text-danger">*</span></td>
+                <td>
+                  <div class="form-check d-flex justify-content-center">
+                    <input type="radio" id="recommend-yes" required name="recommend" class="form-check-input position-static" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check d-flex justify-content-center">
+                    <input type="radio" id="recommend-no" name="recommend" class="form-check-input position-static" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="form-group" id="no-reason-container">
+                <td class="form-label">Please explain why <span class="text-danger">*</span></td>
+                <td colspan="2">
+                  <textarea class="form-control bg-light" required id="no-reason" rows="3"></textarea>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">What did you like most about the training session? <span class="text-danger">*</span></td>
+                <td colspan="2">
+                  <textarea class="form-control bg-light" required id="like-most" rows="4"></textarea>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">Do you have any additional comments or suggestions?</td>
+                <td colspan="2">
+                  <textarea class="form-control bg-light" id="additional-comments" rows="4" form-check-input position-static></textarea>
+                </td>
+              </tr>
+              <tr class="form-group">
+                <td class="form-label">Any other training you would like to attend at MNS Training Centre?</td>
+                <td colspan="2">
+                  <textarea class="form-control bg-light" id="future-training" rows="4" form-check-input position-static></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes-section shadow border-radius rounded-lg px-4 py-4 mb-4 card">
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" required class="custom-control-input" id="ack" />
+          <label class="custom-control-label" for="ack">
+            I have read and acknowledge the <a href="https://mns.mu/wp-content/uploads/2023/09/DC0-MNS_Privacy-Notice-202209.pdf" target="_blank">Privacy Notice</a> and I understand that all personal
+            data shall be collected and processed in accordance with the Data Protection Act 2017.</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mb-4">
+      <button id="clearBtn" type="button" class="btn clear-btn px-4">Clear</button>
+      <button type="submit" id="submitBtn" class="btn submit-btn px-4">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="afc-modal">
+  <div class="afc-modal-dialog">
+      <div class="afc-modal-header">
+          <h5 class="afc-modal-title">Form submitted successfully</h5>
+          <button type="button" class="afc-modal-close" onclick="closeModal(this)">&times;</button>
+      </div>
+      <div class="afc-modal-body">
+        <p class="lh-base">
+          Thank you for your feedback! Your responses will help us improve future training sessions. You may also reach out to us for any training related matter on
+          <a href="mailto:trainingcentre@mnsmu">trainingcentre@mns.mu</a> and <a href="tel:4016800">4016800</a>.
+        </p>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap-select JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+<!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+<!-- Flatpickr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+
+<script>
+  jQuery(document).ready(function () {
+    // Initialize Bootstrap Select
+    jQuery(".selectpicker").selectpicker({
+      liveSearch: true,
+      liveSearchPlaceholder: "Select from the list...",
+      size: 10,
+    });
+    flatpickr(".date", {
+      altInput: true,
+      altFormat: "j F Y",
+      dateFormat: "d-m-Y",
+      allowInput: true, // Allows manual input
+      clickOpens: true, // Opens on click
+      defaultDate: "today", // No default date
+      disableMobile: "true", // Uses native datepicker on mobile
+      minDate: "today",
+    });
+  });
+</script>
